@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclar tabela</title>
+    <style>
+
+        *{
+            font-family: Helvetica, sans-serif, Arial;
+            font-size: 25px;
+        }
+
+        table{
+            width: 700px;
+            margin: auto;
+            text-align: center;
+            padding: 30px 0;
+            border-collapse: collapse;
+        }
+        
+        caption{
+            padding: 30px;
+            font-size: 40px;
+        }
+
+        td{ 
+            border: 1px solid black;
+            padding: 70px;
+            
+        }
+
+
+
+
+    </style>
+
+
+</head>
+<body>
+
+<table>
+    <caption>Mesclando tabelas</caption>
+    <thead>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B
+                <p>colspan="2"</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">D
+                <p>rowspan="2"</p>
+            </td>
+            <td>E</td>
+            <td rowspan="2">H
+                <p>rowspan="2"</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>G</td>     
+        </tr>
+
+    </thead>
+</table>
+    
+</body>
+</html>
