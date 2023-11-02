@@ -1,0 +1,13 @@
+@charset "ufc-8";
+
+table{
+    width: 600px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+td{
+    padding: 30px;
+    border: 2px solid black;
+    text-align: center;
+}
