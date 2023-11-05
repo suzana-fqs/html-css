@@ -1,0 +1,49 @@
+@charset "ufc-8";
+
+*{
+    margin: auto;
+}
+
+caption{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+table{
+    width: 800px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    border-collapse: collapse;
+    margin: 60px auto;
+}
+
+thead{
+    background-color: black;
+    color: white;
+}
+
+td{
+    padding: 15px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+th{
+    padding: 15px;
+    border: 2px solid rgb(44, 44, 44);
+    text-align: center;
+}
+
+th.mediafinal{
+    background-color: black;
+    color: yellow;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+td.mediafinal{
+    background-color: black;
+    color: yellow;
+    font-weight: bold;
+}
