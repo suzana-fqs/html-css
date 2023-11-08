@@ -4,11 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tablelas</title>
-    <link rel="stylesheet" href="styletabelas.css">
+    <style>
 
-   </head>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: auto;
+        }
 
-   <body>
+        section#tabela{
+            background-image: url(https://s2.glbimg.com/WSPZY3XuAwvqcjfoocb9rmA-zh0=/620x300/e.glbimg.com/og/ed/f/original/2019/06/26/populalcao.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            padding-bottom: 30px;
+        }
+
+        section#h1fixo{
+            background-color: black;
+            color: white;
+            position: relative;
+        }
+
+        section#h1fixo > h1{
+            background-color: yellow;
+            color: black;
+            padding: 30px;
+            position: sticky;
+            top: 0px;
+            font-variant: small-caps;
+        }
+
+        h1{
+            text-align:center;
+            padding: 15px;
+            background-color: white;
+            margin-bottom: 30px;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        
+        }
+
+        caption{
+            background-color: yellow;
+            color:black;
+            font-size: 22px;
+            text-align: center;
+            padding: 25px;
+            font-weight: bold;
+            font-variant: small-caps;
+        }
+
+        thead > tr >th{
+            position: sticky;
+            top: -1px;
+            background-color: black;
+        }
+
+        th, tfoot{
+            width: 600px;
+            border-collapse: collapse;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            text-transform:uppercase;
+            padding: 15px;
+        }
+
+        /* tbody > tr:nth-child(odd) Impar
+                               (even) Par
+           tbody > tr:nth-child(2n) de 2 em 2
+                               (3n) de 3 em 3 ...etc
+        */
+
+        /* COMENTÁRIO EM CSS */
+ 
+        tbody > tr:nth-child(even) {
+            background-color: rgba(245, 245, 220, 0.958);
+            border-top: 2px solid;
+            border-bottom: 2px solid;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: rgba(255, 255, 255, 0.949);
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 15px;
+        }
+ 
+        .number{
+            text-align: right;
+            width: 10%;
+        }
+
+        p{
+            font-size: 20px;
+            width: 900px;
+            line-height: 1.5em;
+            padding: 30px 0;
+            text-align: justify;
+            text-indent: 20px;
+        }
+    
+    </style>
+
+</head>
+
+<body>
 
     <section id="tabela">
         <h1>Tabelas Grandes</h1>
@@ -171,9 +277,18 @@
                     <td>C1</td>
                     <td>D1</td>
             -->
-
+        
         </table>
+    </section>
 
-    </body>
+    <section id="h1fixo">
+
+        <h1>Vamos Testar se o lance de deixar o Cabeçalho Fixo vai Funcionar em um h1</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa error consequatur hic non beatae illo fugiat? Reiciendis repellendus voluptatem rerum ipsa asperiores quasi excepturi enim perspiciatis consectetur illo? Perspiciatis, quae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid eum amet dolorem voluptas, veniam ratione sapiente atque nobis sint facere quos nisi quas inventore exercitationem repudiandae odit optio nihil perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe error aut ut aliquam iure aliquid nulla eum, esse sunt quae delectus doloribus. Eum rem sunt ad praesentium aperiam natus iusto!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa error consequatur hic non beatae illo fugiat? Reiciendis repellendus voluptatem rerum ipsa asperiores quasi excepturi enim perspiciatis consectetur illo? Perspiciatis, quae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid eum amet dolorem voluptas, veniam ratione sapiente atque nobis sint facere quos nisi quas inventore exercitationem repudiandae odit optio nihil perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe error aut ut aliquam iure aliquid nulla eum, esse sunt quae delectus doloribus. Eum rem sunt ad praesentium aperiam natus iusto!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa error consequatur hic non beatae illo fugiat? Reiciendis repellendus voluptatem rerum ipsa asperiores quasi excepturi enim perspiciatis consectetur illo? Perspiciatis, quae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid eum amet dolorem voluptas, veniam ratione sapiente atque nobis sint facere quos nisi quas inventore exercitationem repudiandae odit optio nihil perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe error aut ut aliquam iure aliquid nulla eum, esse sunt quae delectus doloribus. Eum rem sunt ad praesentium aperiam natus iusto!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa error consequatur hic non beatae illo fugiat? Reiciendis repellendus voluptatem rerum ipsa asperiores quasi excepturi enim perspiciatis consectetur illo? Perspiciatis, quae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid eum amet dolorem voluptas, veniam ratione sapiente atque nobis sint facere quos nisi quas inventore exercitationem repudiandae odit optio nihil perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe error aut ut aliquam iure aliquid nulla eum, esse sunt quae delectus doloribus. Eum rem sunt ad praesentium aperiam natus iusto!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa error consequatur hic non beatae illo fugiat? Reiciendis repellendus voluptatem rerum ipsa asperiores quasi excepturi enim perspiciatis consectetur illo? Perspiciatis, quae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid eum amet dolorem voluptas, veniam ratione sapiente atque nobis sint facere quos nisi quas inventore exercitationem repudiandae odit optio nihil perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe error aut ut aliquam iure aliquid nulla eum, esse sunt quae delectus doloribus. Eum rem sunt ad praesentium aperiam natus iusto!</p>
+    </section>
     
+</body>
 </html>
