@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores range file</title>
+    <style>
+        *{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: auto;
+    }
+
+    input{
+        margin-bottom: 10px;
+    }
+
+    fieldset#classif{
+        columns: 2;
+    }
+
+    label.campocor{
+        padding:0 10px 0 30px;
+    }
+
+    fieldset{
+        
+        width: 600px;
+        min-height: 80px;
+        padding: 35px;
+        margin-top: 20px;
+        background-color: rgb(218, 255, 243);
+        color:rgb(30, 0, 95);
+        border: 2px solid rgb(30, 0, 95);
+        box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.086);
+    }
+    fieldset:hover{
+        box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.455);
+        transform: scale(100.2%);
+        transition-duration: 0.3s;
+
+    }
+
+    legend{
+        background-color: rgb(30, 0, 95);
+        color: white;
+        padding: 5px 20px;
+        margin-left: -45px;
+    }
+
+    input#botao, input#limpar{ 
+
+            background-color: rgb(30, 0, 95);
+            font-size: 20px;
+            color: white;
+            padding: 15px 60px;
+            border: none;
+            margin: 0 10px;
+            
+        
+        }      
+
+        input#botao:hover, input#limpar:hover{ 
+           background-color: rgb(0, 0, 0);
+           transform: scale(115%);
+           transition: 0.5s;        
+        }
+
+        div{
+            text-align: center;
+            padding: 30px;
+        }
+
+      
+    </style>
+        
+</head>
+
+<body>
+    <h1> Cores | Range | File </h1>
+
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend>Cores</legend>
+            <label for="icor">Cor primária</label>
+            <input type="color" name="cor" id="icor" value="#44FFd8">
+            <label class="campocor" for="icor2">Cor secundária</label>
+            <input type="color" name="cor2" id="icor2" value="#845Fd5">
+            <label class="campocor" for="inao">Cor que odeio</label>
+            <input type="color" name="nao" id="inao" value="#f725e5">
+        </fieldset>
+        <fieldset id="classif">
+            <legend>Classifique as seugintes marcas</legend>
+            <label for="imarca1">Google</label>
+            <input type="range" name="marca1" id="imarca1" max="5" min="1" value="1">
+                <br>
+            <label for="imarca2">Aple</label>
+            <input  type="range" name="marca2" id="imarca2" max="5" min="1" value="1">
+                <br>
+            <label for="imarca3">Lenovo</label>
+            <input  type="range" name="marca3" id="imarca3" max="5" min="1" value="1">
+                <br>
+            <label for="imarca4">Burguer King</label>
+            <input  type="range" name="marca4" id="imarca4" max="5" min="1" value="1">
+                        <br>
+            <label for="imarca5">Integral medical</label>
+            <input  type="range" name="marca5" id="imarca5" max="5" min="1" value="1">
+                <br>
+            <label for="imarca6">Motorola</label>
+            <input  type="range" name="marca6" id="imarca6" max="5" min="1" value="1">
+        </fieldset>
+        <fieldset>
+            <legend>Foto preferida</legend>
+            <label for="ifoto">Foto de perfil</label>
+            <input type="file" name="foto" id="ifoto">
+        </fieldset>
+        <div>
+            <input id="botao" type="submit" value="Enviar">
+            <input id="limpar" type="reset" value="Limpar">
+        </div>
+    </form>
+
+    
+</body>
+</html>
