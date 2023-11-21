@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select datalist textarea</title>
+    <style>
+
+         *{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: auto;
+    }
+
+    input{
+        margin-bottom: 10px;
+    }
+
+    fieldset{
+        width: 300px;
+        min-height: 80px;
+        padding: 35px;
+        margin-top: 20px;
+        background-color: rgb(218, 255, 243);
+        color:rgb(30, 0, 95);
+        border: 2px solid rgb(30, 0, 95);
+        box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.086);
+    }
+
+    fieldset:hover{
+        box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.455);
+        transform: scale(100.2%);
+        transition-duration: 0.3s;
+    }
+
+    legend{
+        background-color: rgb(30, 0, 95);
+        color: white;
+        padding: 5px 20px;
+        margin-left: -45px;
+    }
+
+    input#botao, input#limpar{ 
+
+            background-color: rgb(30, 0, 95);
+            font-size: 20px;
+            color: white;
+            padding: 15px 60px;
+            border: none;
+            margin: 0 10px;        
+        }      
+
+        input#botao:hover, input#limpar:hover{ 
+           background-color: rgb(0, 0, 0);
+           transform: scale(115%);
+           transition: 0.5s;        
+        }
+
+        div{
+            text-align: center;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    
+   
+        <form action="cadastro.php">
+            <h1>Select datalist textarea</h1>
+            <fieldset>
+                <legend>Escolha um personagem</legend>
+                <select required name="person" id="iperson" >
+                    <optgroup label="Feminino">
+                        <option value="">Mulher Maravilha</option>
+                        <option value="">Penelope Charmosa</option>
+                        <option value="">Olivia Palito</option>
+                        <option value="Velma">Velma</option>
+                    </optgroup>
+                    <optgroup label="Masculino">
+                        <option value="">Perna Longa</option>
+                        <option value="">Mickey</option>
+                        <option value="">Capitão América</option>
+                        <option value="Tom">Tom</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Escolha um Cenário</legend>
+                    <input type="text" name="cen" id="icen" list="lcen" placeholder="Pense bem...">
+                    <datalist id="lcen" >
+                        <option value="Guerra de balão d'água"></option>
+                        <option value="Aniversário infantil"></option>
+                        <option value="Lavanderia"></option>
+                        <option value="Zoo savana livre"></option>
+                        <option value="Subsolo cabuloso"></option>
+                        <option value="Academia Lotada"></option>
+                        <option value="Show de PunkRock"></option>
+                    </datalist>
+            </fieldset>
+            <fieldset>
+                <legend>Crie um resumo da hitória</legend>
+                <textarea name="msg" id="imsg" cols="40" rows="8" placeholder="Solte sua imaginação..." maxlength="600"></textarea>
+            </fieldset>
+            
+            <div>
+                <input id="botao" type="submit" value="Enviar criação">
+                <input id="limpar" type="reset" value="Começar do zero">
+            </div>
+        </form>
+       
+    
+    
+
+
+</body>
+</html>
