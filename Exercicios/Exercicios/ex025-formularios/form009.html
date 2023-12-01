@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>range com número do lado</h1>
+    <form action="cadastro" method="post" autocomplete="on">
+        <p>
+            <label for="inum">Número:</label>
+            <input type="range" id="inum" name="num" max="100" min="0" value="5"
+            oninput="ival.innerHTML = Number(inum.value)">
+            <output id="ival">5</output>
+        </p>
+
+        <p>
+            <label for="iage" >Em que ano vc Nasceu?</label>
+            <input type="number" placeholder="Nasci em...?" maxlength="100" max="2050" min="1500" id="iage" name="age"
+            oninput="calcIdade()">
+        </p>
+        <p>
+            <Label for="iidade">Sua idade é</Label>
+            <output id="iidade"> 0 </output>
+        </p>
+
+    </form>
+
+    <script>
+        function calcIdade(){
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iage.value)
+        }
+    </script>
+</body>
+</html>
