@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
+
 /* versão mobile first */
+
 
 *{
     font-family: Arial, Helvetica, sans-serif;
@@ -25,7 +27,6 @@ Body{
 }
 
 
-
 main{
     align-items: center;
     width: 80vw;
@@ -36,11 +37,12 @@ main{
     border-radius: 15px;
 }
 
-img#phone{display: block;}
-img#tablet{display: none;}
-img#print{display: none;}
-img#pc{display: none;}
-img#tv{display: none;}
+/* Não to conseguindo fazer o icone de celular aparecer na tela de celular... não achei nenhum erro*/
+img#phone { display: block; }
+img#tablet { display: none;}
+img#print { display: none; }
+img#pc { display: none; }
+img#tv { display: none; }
 
 img{
     display: block;
