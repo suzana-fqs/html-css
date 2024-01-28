@@ -44,6 +44,21 @@ article >p{
     padding-top: 20px;
 }
 
+span#burguer{ /* MENU RESPONSIVO */
+    display: block; 
+    background-color: rgb(0, 0, 0);
+    color: yellow;  
+    padding: 5px 0 5px 0;
+    margin-top: 10px;
+}
+
+span#burguer:hover{
+    display: block;
+    background-color: yellow;
+    color: black;
+
+}
+
 ul{
     text-decoration: none;
     list-style-type: none;
