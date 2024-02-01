@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1> Responsividade</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu stat_minus_3 
@@ -36,6 +36,7 @@
         </article>
     </main>
     <script> /*JAVA SCRIP*/
+
         function clickMenu(){
             if (itensdomenu.style.display=='block'){
                 itensdomenu.style.display='none'
@@ -43,6 +44,15 @@
                 itensdomenu.style.display='block'
             }
         }
+
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                itensdomenu.style.display = 'block'
+            } else{
+                itensdomenu.style.display = 'none'
+            }
+        }
+
     </script>
 </body>
 </html>

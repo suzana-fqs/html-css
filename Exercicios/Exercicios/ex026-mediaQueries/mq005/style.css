@@ -59,6 +59,10 @@ span#burguer:hover{
 
 }
 
+#itensdomenu{
+    display: none;
+}
+
 ul{
     text-decoration: none;
     list-style-type: none;
